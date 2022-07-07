@@ -166,7 +166,7 @@ p {
     .payment {
         justify-content: left;
         position: absolute;
-        margin-left: 30vw;
+        margin-left: 350px;
     }
 
     p.customer {
@@ -206,7 +206,7 @@ p {
     }
 
     .payment {
-        margin-left: 40vw;
+        margin-left: 700px;
     }
 
     .deliveryautomation {
