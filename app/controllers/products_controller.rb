@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :authorise_user, only: [:edit, :update, :destroy]
   # GET /products or /products.json
   def index
     @products = Product.all
@@ -63,6 +64,13 @@ class ProductsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
+    end
+
+    def authorise_user
+      if @product.user_id != current_user.id
+        flash[:alert] = "You can't access this page."
+        redirect_to products_path
+      end
     end
 
     # Only allow a list of trusted parameters through.
