@@ -1,26 +1,19 @@
 <head>
-  <link rel="stylesheet" href="home.css">
+  <%= stylesheet_link_tag 'home.css' %>
 </head>
 
 <div class="signin">
   <ul>
     <li>
-      <a href="signup">Sign Up</a>
-      <a href="signin">Sign In</a>
+      <a href="<%= new_user_session_path %>">Sign Up</a>
+      <a href="<%= new_user_registration_path %>">Sign In</a>
     </li>
   </ul>
 </div>
 <div class="title">
   <h1>Productr</h1>
 </div>
-<div class="headline">
-  <p>Buy and sell unique software</p>
-</div>
-<div class="getstarted">
-  <a href="getstarted">get started</a>
-</div>
-<div class="promoimg">
-  <svg class="dashboardimg"
+<svg class="dashboardimg"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     width="310"
@@ -44,6 +37,13 @@
     </defs>
     <rect id="dash" width="310" height="237" fill="url(#pattern)" />
   </svg>
+<div class="headline">
+  <p>Buy and sell unique software</p>
+</div>
+<div class="getstarted">
+  <a href="getstarted">get started</a>
+</div>
+<div class="promoimg">
 </div>
 <div class="payment">
   <svg

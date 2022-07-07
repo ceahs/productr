@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Sans-Serif;
+    background-image: linear-gradient(#A34FF7, #C600B7);
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+
+}
+
+svg.dashboardimg {
+    width: 100%;
+    text-align: center;
+
+}
+
+.signin {
+    display: flex;
+    color: black;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+
+
+}
+
+ul {
+    list-style-type: none;
+    color: black;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    color: black;
+    font-size: small;
+    text-align: center;
+}
+
+a {
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.442);
+    border-radius: 3rem;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+}
+
+.getstarted {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.promoimg {
+    display: flex;
+    justify-content: center;
+}
+
+.dash {
+    width: 5000px;
+    height: auto;
+}
+
+.payment {
+    display: flex;
+    justify-content: center;
+}
+
+.deliveryautomation {
+    color: black;
+    font-size: 2rem;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.customer {
+    color: black;
+    text-align: center;
+}
+
+.sickofthisnowtbh {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .signin {
+        justify-content: right;
+        margin-right: 100px;
+        overflow: auto;
+    }
+
+    .title {
+        margin-top: 100px;
+        display: inline-block;
+        justify-content: left;
+        margin-left: 100px;
+        font-size: medium;
+    }
+
+    .headline {
+        display: inline-block;
+        justify-content: left;
+        margin-left: 160px;
+        width: 90%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .getstarted {
+        display: inline-block;
+        justify-content: left;
+        margin-left: 140px;
+    }
+
+    svg.dashboardimg {
+        text-align: unset;
+        width: 750px;
+        height: 750px;
+        position: absolute;
+    }
+
+    p {
+        justify-content: left;
+    }
+
+    .deliveryautomation {
+        margin-top: 300px;
+    }
+
+    svg.payment {
+        position: absolute;
+    }
+
+    .payment {
+        justify-content: left;
+        position: absolute;
+        margin-left: 30vw;
+    }
+
+    p.customer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow: auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .signin {
+        margin-left: 830px;
+        overflow: auto;
+    }
+
+    .title {
+        margin-left: 300px;
+        margin-right: 200px;
+    }
+
+    .headline {
+        margin-left: 350px;
+    }
+
+    .getstarted {
+        margin-left: 325px;
+    }
+
+    .payment {
+        margin-left: 40vw;
+    }
+
+    .deliveryautomation {
+        margin-top: 500px;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+}
