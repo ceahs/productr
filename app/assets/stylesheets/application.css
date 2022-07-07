@@ -3,7 +3,7 @@ body {
     font-family: Helvetica, Sans-Serif;
     background-image: linear-gradient(#A34FF7, #C600B7);
     background-repeat: no-repeat;
-    background-size: 100% 60vh;
+    background-size: 100% 600px;
 
 }
 
@@ -13,6 +13,7 @@ body {
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 20px;
+    text-align: center;
 
 
 }
@@ -20,26 +21,32 @@ body {
 ul {
     list-style-type: none;
     color: black;
+    text-align: center;
+    padding: 0;
 }
 
 li {
     color: black;
+    font-size: small;
+    text-align: center;
 }
 
 a {
     border-style: solid;
     border-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.442);
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-radius: 3rem;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
     text-decoration: none;
     color: black;
     background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
 }
 
