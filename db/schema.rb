@@ -120,8 +120,8 @@ ActiveRecord::Schema.define(version: 2022_07_05_031227) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "listing_news", "\"user\"", column: "user_id"
-  add_foreign_key "listings", "\"user\"", column: "user_id"
+  add_foreign_key "listing_news", "users", column: "user_id"
+  add_foreign_key "listings", "users", column: "user_id"
   add_foreign_key "listings", "catagories"
-  add_foreign_key "products", "\"user\"", column: "user_id"
+  add_foreign_key "products", "users", column: "user_id"
 end
