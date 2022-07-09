@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show edit update destroy ]
+  before_action :set_product, only: %i[ show edit update destroy place_order ]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :authorise_user, only: [:edit, :update, :destroy]
   # GET /products or /products.json
@@ -58,6 +58,16 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def place_order
+    Order.create(
+      product_id: @product.id,
+      seller_id: @product.user_id,
+      buyer_id: current_user.id
+    )
+
+    redirect_to order_success_path
   end
 
   private
