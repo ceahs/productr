@@ -84,3 +84,8 @@ test:
 production:
   <<: *default
   database: productr_new_production
+  adapter: postgresql
+  host: localhost
+  encoding: unicode 
+  username: <%= ENV[“POSTGRES_USER”] %>
+  password: <%= ENV[“POSTGRES_PASSWORD”] %>
