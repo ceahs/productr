@@ -83,6 +83,3 @@ test:
 #
 production:
   <<: *default
-  database: productr_new_production
-  adapter: postgresql
-  host: localhost
