@@ -83,3 +83,4 @@ test:
 #
 production:
   <<: *default
+  database: productr_new_production
