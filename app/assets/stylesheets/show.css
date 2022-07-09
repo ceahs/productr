@@ -1,0 +1,96 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 0.24);
+    border-radius: 20px;
+    background-color:rgb(250, 250, 250);
+    border-width: 1px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.prices {
+    height: 122px;
+    border-style: solid;
+    border-color: rgba(112, 112, 112, 0.24);
+    border-radius: 20px;
+    background-color: rgb(250, 250, 250);
+    border-width: 1px;
+ 
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.title {
+    width: 280px;
+    height: 200px;
+    color: black;
+    font-size: 2rem;
+}
+
+.description {
+    width: 100%;
+    color: black;
+    margin-left: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: #A34FF7;
+    background-color: #A34FF7;
+    padding: 0.5rem;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.price {
+    margin-left: 15px;
+    font-size: x-large;
+}
+
+.nav {
+    background-color: #A34FF7;
+    margin: 0;
+    padding: 3rem;
+    padding-left: 400px;
+    color: white;
+    font-size: x-large;
+}
+

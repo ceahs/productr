@@ -1,33 +1,51 @@
+<div class="nav">
+   <strong>
+  Productr
+  </strong>
+</div>
 <p id="notice"><%= notice %></p>
 
-<div>
+<head>
+  <%= stylesheet_link_tag 'show.css' %>
+</head>
+
+
+
+<div class="container">
+  <div class="product">
 <% if @product.picture.attached? %>
  <%= image_tag @product.picture, alt: @product.title %>
    <% else %> 
  <%= image_tag "https://placekitten.com/400/400", alt: @listing.title %>
   <% end %>
+
+  <p class="title">
+    <strong>
+    <%= @product.title %>
+    </strong>
+  </p>
+
+  <p class="description">
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
+
+    <% if current_user.id == @product.user_id %>
+  <%= link_to 'Edit', edit_product_path(@product) %><% end %>
+<%= link_to 'Back', products_path %>
+</div>
+  <div class="prices">
+  <p class="price">
+    <strong>$
+    <%= @product.price %>
+    </strong>
+  </p>
+  <a href="">Buy Now</a>
 </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<div class="back">
 
-<p>
-  <strong>User:</strong>
-  <%= @product.user_id %>
-</p>
-<% if current_user.id == @product.user_id %>
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-<% end %>
-<%= link_to 'Back', products_path %>
+</div>

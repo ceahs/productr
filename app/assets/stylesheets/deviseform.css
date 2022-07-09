@@ -1,0 +1,45 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a34ff78a;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.field {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    
+    background-color: #A34FF7;
+    margin: 0;
+    padding: 3rem;
+    padding-left: 400px;
+    color: white;
+    font-size: x-large;
+}
+
+.sign {
+    margin-left: 300px;
+    margin-top: 100px;
+}
