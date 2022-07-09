@@ -1,4 +1,20 @@
-<h2>Log in</h2>
+<%= stylesheet_link_tag 'deviseformlogin.css' %>
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<div class="nav">
+   <strong>
+  Productr
+  </strong>
+</div>
+
+<div class="sign">
+<h1>WELCOME BACK</h1>
+<h2>Sign in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -19,7 +35,7 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Sign in" %>
   </div>
 <% end %>
 
