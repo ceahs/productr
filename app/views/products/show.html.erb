@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <div>
-<%# <% if @product.picture.attached? %> %>
+<% if @product.picture.attached? %>
  <%= image_tag @product.picture, alt: @product.title %>
-<%# <% if else %> %>
+   <% else %> 
+ <%= image_tag "https://placekitten.com/400/400", alt: @listing.title %>
+  <% end %>
 </div>
 
 <p>
