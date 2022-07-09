@@ -26,6 +26,11 @@
     <%= form.number_field :price %>
   </div>
 
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, accept: "image/png,image/jpg,image/jpeg,image/gif" %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
