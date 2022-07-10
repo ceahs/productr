@@ -94,3 +94,7 @@ p {
     font-size: x-large;
 }
 
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+}

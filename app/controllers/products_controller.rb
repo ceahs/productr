@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
   end
 
   # POST /products or /products.json
+  # Creates a new product in the database, with the params specificed in product_params as the current_user
   def create
     @product = Product.new(product_params)
     @product.user = current_user
@@ -59,7 +60,9 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
+#  Gets the product id, the id of the user who created the product, and then the current users id (the buyer)
+# to create an order in the db.
   def place_order
     Order.create(
       product_id: @product.id,
@@ -84,6 +87,8 @@ class ProductsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
+    # All these parameters are shown on the show page besides user_id. The information is requested by the
+    # create method
     def product_params
       params.require(:product).permit(:title, :description, :price, :user_id, :picture)
     end
